@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Animated Shet</string>
+    <string name="enter_some_extra">Enter some extra</string>
+    <string name="write_your_wishes">Write your wishes</string>
+    <string name="enter_name">Enter name</string>
+    <string name="save">Save</string>
 </resources>

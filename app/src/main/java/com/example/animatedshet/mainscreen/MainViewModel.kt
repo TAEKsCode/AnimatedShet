@@ -6,16 +6,6 @@ import kotlinx.coroutines.launch
 
 class MainViewModel : ViewModel() {
 
-    private lateinit var model: MainModel
+    val model = MainModel("", "", "", "", "")
 
-    init {
-        loadInfo()
-    }
-
-    private fun loadInfo() {
-        viewModelScope.launch {
-            //if (no model in prefs)
-            model = MainModel("sanya", "40rt")
-        }
-    }
 }

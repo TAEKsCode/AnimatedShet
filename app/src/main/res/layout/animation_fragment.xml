@@ -13,27 +13,31 @@
         tools:context=".animation.AnimationFragment">
 
         <ImageView
+            android:id="@+id/animationBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <ImageView
             android:id="@+id/leftDoor"
             android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_height="500dp"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:scaleType="fitXY"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/doors_reflected" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/rightDoor"
             android:layout_width="200dp"
-            android:layout_height="wrap_content"
+            android:layout_height="500dp"
             android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/doors" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/cloud"
+            android:id="@+id/downToUpImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Show animation"
-            app:layout_constraintBottom_toTopOf="@+id/cloud"
+            app:layout_constraintBottom_toTopOf="@+id/downToUpImage"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rightDoor" />
